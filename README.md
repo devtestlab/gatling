@@ -10,9 +10,9 @@ Once above setup is done then use InteliJ to setup your maven project with gatli
 1.	Install Scala plugin in InteliJ to create scala scripts for Gatling
 2.	Start new project with “Archetype” and use below mentioned url for project setup
 https://mvnrepository.com/artifact/io.gatling.highcharts/gatling-highcharts-maven-archetype
-•	GroupId - io.gatling.highcharts
-•	ArtifactId - gatling-highcharts-maven-archetype
-•	Version - 3.5.1
+i.	GroupId - io.gatling.highcharts
+ii.	ArtifactId - gatling-highcharts-maven-archetype
+iii.	Version - 3.5.1
 
 3.	Once above setup is done and give name and location to your project and finish
 4.	As soon project is created system will create pom file for project and build it which will take around 3-4 Minutes depending on package size and system
@@ -31,17 +31,17 @@ SCALA Scripts Structure:
 
 1.	Script should have package name as simulations as we’ve created in above steps.
 2.	Then we would need below mentioned imports **important for writing and executing scripts
-a.	import.io.gatling.core.scenario.Simulation
-b.	import.io.gatling.core.Predef._
-c.	import.io.gatling.core.http.predef._
+i.	import.io.gatling.core.scenario.Simulation
+ii.	import.io.gatling.core.Predef._
+iii.	import.io.gatling.core.http.predef._
 3.	Above ‘_’ means import everything from this package like we use * in java
 4.	Then we’ve to start writing class for test case as – 
 class TestAPI extends Simulation{}
 5.	Every class that we will create must extends Simulation class to inherits all its features and methods.
 6.	Inside this class we will have three sections as mentioned below:
-a.	http configuration
-b.	scenario
-c.	setup
+i.	http configuration
+ii.	scenario
+iii.	setup
 7.	Http configuration will be used to setup base URL of the website or web application in a variable that will be used in our step ‘c’ 
 8.	Scenario will be used to create different scenarios to test with website or web-application mentioned in base URL. In one scala script we can create multiple scenarios make sure you should use the proper syntax. Such as using ‘.’ With every keyword in the script. If you miss that dot, then script will run only till that line and then skip rest of the cases.
 9.	Setup is used to create how you would like to run performance with specified users and time and ramp up time etc. you can use below mentioned setup for testing.
