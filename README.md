@@ -48,16 +48,17 @@ c.	setup
 Open Model
 setUp(
   scn.inject(
-    nothingFor(4.seconds), // 1
-    atOnceUsers(10), // 2
-    rampUsers(10).during(5.seconds), // 3
-    constantUsersPerSec(20).during(15.seconds), // 4
-    constantUsersPerSec(20).during(15.seconds).randomized, // 5
-    rampUsersPerSec(10).to(20).during(10.minutes), // 6
-    rampUsersPerSec(10).to(20).during(10.minutes).randomized, // 7
-    heavisideUsers(1000).during(20.seconds) // 8
-  ).protocols(httpProtocol)
+    atOnceUsers(10)).protocols(httpProtocol)
 )
+
+1.	nothingFor(4.seconds)
+2.	atOnceUsers(10)
+3.	rampUsers(10).during(5.seconds)
+4.	constantUsersPerSec(20).during(15.seconds)
+5.	constantUsersPerSec(20).during(15.seconds).randomized
+6.	rampUsersPerSec(10).to(20).during(10.minutes)
+7.	rampUsersPerSec(10).to(20).during(10.minutes).randomized
+8.	heavisideUsers(1000).during(20.seconds)
 
 The building blocks for profile injection the way you want are:
 
