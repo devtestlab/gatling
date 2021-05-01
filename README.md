@@ -10,9 +10,10 @@ Once above setup is done then use InteliJ to setup your maven project with gatli
 1.	Install Scala plugin in InteliJ to create scala scripts for Gatling
 2.	Start new project with “Archetype” and use below mentioned url for project setup
 https://mvnrepository.com/artifact/io.gatling.highcharts/gatling-highcharts-maven-archetype
-GroupId - io.gatling.highcharts
-ArtifactId - gatling-highcharts-maven-archetype
-Version - 3.5.1
+•	GroupId - io.gatling.highcharts
+•	ArtifactId - gatling-highcharts-maven-archetype
+•	Version - 3.5.1
+
 3.	Once above setup is done and give name and location to your project and finish
 4.	As soon project is created system will create pom file for project and build it which will take around 3-4 Minutes depending on package size and system
 5.	Close the project once and re-open it to check everything is setup properly
