@@ -6,6 +6,13 @@ import io.gatling.http.Predef._
 
 class AddUserWithJSON extends Simulation{
 
+    /*
+    THIS PROGRAM IS FOR:
+    1. ADD NEW RECORD OF A USER USING JSON FILE
+    2. THEN GETTING THE USER ADDED IN THE RECORDS
+    3. AND FINALLY GETTING LIST OF ALL USERS
+   */
+
   //http configuration
   val httpConf = http.baseUrl("http://reqres.in")
     .header("Accept","application/json")
