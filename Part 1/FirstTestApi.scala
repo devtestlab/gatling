@@ -6,6 +6,11 @@ import io.gatling.http.Predef._
 
 class FirstTestApi extends Simulation {
 
+  /*
+    THIS PROGRAM IS FOR:
+    1. ADD NEW RECORD OF A USER USING JSON FILE
+   */
+
   val httpConf = http.baseUrl("http://reqres.in")
     .header("Accept","application/json")
 
