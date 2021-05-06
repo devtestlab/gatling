@@ -6,8 +6,8 @@ You can request to generate token for you and then you can use the same token in
 
 FIDDLER Proxy Configuration:
 
-1. Go to below mentioned URLs as per your operating system.
---- Windows : https://www.telerik.com/download/fiddler
+1. Go to below mentioned URLs as per your operating system.<br>
+--- Windows : https://www.telerik.com/download/fiddler <br>
 --- MAC : https://www.telerik.com/download/fiddler-everywhere
 2. Please enter Name if asked, email and Country and accept terms
 3. Download application and install.
