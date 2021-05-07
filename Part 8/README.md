@@ -15,8 +15,8 @@ FIDDLER Proxy Configuration:
 5. Select option and check for port number. You can use predefined one else you can define your own and save.
 6. Once done then goto your scala script and use below mentioned code. Token and baseUrl in your case will be different 
 
-val httpConf = http.proxy(Proxy("localhost", port = 8888)) // This is Fiddler's proxy configuration
-    .baseUrl("http://gorest.co.in")
+val httpConf = http.proxy(Proxy("localhost", port = 8888)) // This is Fiddler's proxy configuration<br>
+    .baseUrl("http://gorest.co.in")<br>
     .header("Authorization", "Bearer dba6e3d77bc25db0972b7dbcf60af6b7fbbff7bf30f3eb1d3e24e5193e165ab6")tioned configuration in http configuration.
 
 7. Write your test script and then execute
